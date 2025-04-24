@@ -442,5 +442,55 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="popup-close" type="button">x</button>
+        <p class="modal-paragraph">
+          Leave your contacts and we will call you back
+        </p>
+        <form>
+          <div>
+            <label for="usersname">Name</label>
+            <div>
+              <input type="text" name="name" id="users-name" />
+              <!-- icon -->
+            </div>
+          </div>
+          <div>
+            <label for="usersphone">Phone</label>
+            <div>
+              <input type="tel" name="phone" id="users-phone" />
+              <!-- icon -->
+            </div>
+          </div>
+          <div>
+            <label for="usersmail">Email</label>
+            <div>
+              <input type="email" name="email" id="users-mail" />
+              <!-- icon -->
+            </div>
+          </div>
+          <div>
+            <label for="userscomment">Comment</label>
+            <textarea
+              id="users-comment"
+              name="userscomment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>
+              <span></span>
+              <p>
+                I accept the terms and conditions of the
+                <a href="">Privacy Policy</a>
+              </p>
+            </label>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
