@@ -445,43 +445,43 @@
     <div class="backdrop is-open">
       <div class="modal">
         <button class="popup-close" type="button">
-          <svg class="" width="8" height="8">
+          <svg class="button-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-paragraph">
           Leave your contacts and we will call you back
         </p>
-        <form>
-          <div>
-            <label for="usersname">Name</label>
-            <div>
+        <form class="form">
+          <div class="form-field">
+            <label for="usersname" class="form-label">Name</label>
+            <div class="input-wrapper">
               <input type="text" name="name" id="users-name" />
-              <svg class="" width="12" height="12">
+              <svg class="input-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
           </div>
-          <div>
-            <label for="usersphone">Phone</label>
-            <div>
+          <div class="form-field">
+            <label for="usersphone" class="form-label">Phone</label>
+            <div class="input-wrapper">
               <input type="tel" name="phone" id="users-phone" />
-              <svg class="" width="13" height="13">
+              <svg class="input-icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-          <div>
-            <label for="usersmail">Email</label>
-            <div>
+          <div class="form-field">
+            <label for="usersmail" class="form-label">Email</label>
+            <div class="input-wrapper">
               <input type="email" name="email" id="users-mail" />
-              <svg class="" width="16" height="12">
+              <svg class="input-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
             </div>
           </div>
-          <div>
-            <label for="userscomment">Comment</label>
+          <div class="input-textarea">
+            <label for="userscomment" class="form-label">Comment</label>
             <textarea
               id="users-comment"
               name="userscomment"
@@ -489,16 +489,16 @@
             ></textarea>
           </div>
           <div>
-            <input type="checkbox" />
-            <label>
+            <input type="checkbox" id="checkbox" name="privacypolicy" />
+            <label for="checkbox">
               <span></span>
               <p>
                 I accept the terms and conditions of the
-                <a href="">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </p>
             </label>
           </div>
-          <button type="submit">Send</button>
+          <button type="submit" class="button-send">Send</button>
         </form>
       </div>
     </div>
